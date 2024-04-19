@@ -15,38 +15,38 @@
             <h1>Temperature Converter by Lywen Chandra</h1>
         </header>
 
-        <Section class="main-section">
+        <section class="main-section">
             <!-- section introduction -->
             <section>
-                <p> Masukan Suhu Derajat Celsius(&deg;C) ke kotak dibawah lalu klik tombol konversi 
-                    untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (&deg;F).
+                <p> Masukan Suhu Derajat Fahrenheit(&deg;F) ke kotak dibawah lalu klik tombol konversi 
+                    untuk mendapatkan hasil konversi dalam bentuk Celsius (&deg;C).
                 </p>
             </section>
         
             <form onsubmit="convertFahrenheit(); return false;">
-                <section class="section-celsius">
+                <section class="section-fahrenheit">
                     <header>
                         <h3>Fahrenheit(&deg;F)</h3>
                     </header>
     
                     <article>
-                        <input id="input-celsius" placeholder="input Degree(in number)" pattern="\d+(\.\d+)?" required title="input should be a number"/>
+                        <input id="input-fahrenheit" placeholder="input Degree(in number)" pattern="\d+(\.\d+)?" required title="input should be a number"/>
                         
                         <div class="container-button">
-                            <button id="button-convert" onclick="convert()">Convert</button>
-                            <button id="button-reset" onclick="reset()" formnovalidate>Reset</button>
-                            <button id="button-reverse" onclick="reverse()">Reverse</button>
+                            <button id="button-convert" onclick="convertFahrenheit()">Convert</button>
+                            <button id="button-reset" onclick="resetFahrenheit()" formnovalidate>Reset</button>
+                            <button id="button-reverse" onclick="reverseFahrenheit()">Reverse</button>
                         </div>
                     </article>
                 </section>
             </form>
-                <section class="section-fahrenheit">
+                <section class="section-celsius">
                     <header>
-                        <h3>Cara kalkulasi(&deg;F)</h3>
+                        <h3>Cara kalkulasi(&deg;C)</h3>
                     </header>
     
                     <article>
-                        <textarea id="result" rows="1" readonly></textarea>
+                        <textarea id="result-fahrenheit" rows="1" readonly></textarea>
                     </article>
                 </section>
     
@@ -62,7 +62,7 @@
     
                 <section class="section-explanation">
                     <header>
-                        <h3>Cara konversi dari (&deg;C) ke Fahrenheit(&deg;F)</h3>
+                        <h3>Cara konversi dari (&deg;F) ke Celsius(&deg;C)</h3>
                     </header>
                     <hr>
                     <article>
@@ -77,7 +77,7 @@
 
 
             
-        </Section>
+        </section>
     </main>
 
 </body>
