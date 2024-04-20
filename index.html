@@ -10,14 +10,14 @@
 </head>
 
 <body>
-    <main>
+    <main class="container">
         <header class="main-title">
             <h1>Temperature Converter by Lywen Chandra</h1>
         </header>
 
         <Section class="main-section">
             <!-- section introduction -->
-            <section>
+            <section class="instruction">
                 <p> Masukan Suhu Derajat Celsius(&deg;C) ke kotak dibawah lalu klik tombol konversi 
                     untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (&deg;F).
                 </p>
@@ -42,7 +42,7 @@
             </form>
                 <section class="section-fahrenheit">
                     <header>
-                        <h3>Cara kalkulasi(&deg;F)</h3>
+                        <h3>Fahrenheit(&deg;F)</h3>
                     </header>
     
                     <article>
@@ -52,7 +52,7 @@
     
                 <section class="section-result">
                     <header>
-                        <h3>Result(&deg;F)</h3>
+                        <h3>Cara Kalkulasi:</h3>
                     </header>
     
                     <article>
@@ -67,10 +67,21 @@
                     <hr>
                     <article>
 
-                        <h3 class="formula-desc">suhu S dalam derajat Fahrenheit (&deg;F) sama dengan
-                            suhu S dalam derajat celsius(&deg;C) kali 9/5 tambah 32.</h3>
+                        <p class="formula-desc">suhu
+                            <span class="symbol">
+                                <i>S</i>
+                            </span>
+                            
+                             dalam derajat Fahrenheit (&deg;F) sama dengan
+                            suhu 
+                            <span>
+                                S
+                            </span>
+                            dalam derajat celsius(&deg;C) kali 9/5 tambah 32.</p>
                         
-                        <h1 class="formula-s">S <sub>(&deg;F)</sub>=(S <sub>(&deg;C)</sub>x 9/5 tambah 32)</h1>
+                        <h1 class="formula-s">S <sub>(&deg;F)</sub>=(S <sub>(&deg;C)</sub>   × 9/5) &#43; 32</h1>
+                        <p>atau</p>
+                        <h1 class="formula-s">S <sub>(&deg;F)</sub>=(S <sub>(&deg;C)</sub> × 1.8) + 32</h1>
                     </article>
                 </section>
             

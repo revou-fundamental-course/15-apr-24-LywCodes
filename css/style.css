@@ -63,7 +63,12 @@ textarea{
 }
 
 .formula-desc{
-    font-size: 15px;
+    font-size: 18px;
+    font-style: normal;
+}
+
+.symbol{
+    font-size: 20px;
     font-style: italic;
 }
 
@@ -81,6 +86,7 @@ button{
     padding: 8px;
     border-radius: 4px;
     font-family: Arial;
+    cursor: pointer;
 }
 #button-convert{
     background-color: green;
@@ -97,4 +103,15 @@ button{
     color: white;
 }
 
-/* !Fahrenheit to Celcius ! */
+textarea {
+    cursor: not-allowed;
+}
+
+.instruction{
+    font-size: 20px;
+}
+
+.container{
+    width: 50%;
+    margin: center;
+}
