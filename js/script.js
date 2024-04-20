@@ -1,9 +1,9 @@
 const inputButton = document.getElementById('container-button');
 
+// * Function untuk mengconvert nilai pada input (Celsius to Fahrenheit) dan validation input*\\
 function convert() {
     let celsiusInput = parseFloat(document.getElementById('input-celsius').value);
 
-    
     if (!isNaN(celsiusInput)) {
         let fahrenheitOutput = celsiusInput * 1.8 + 32;
         let solution = celsiusInput + '°C * (9 / 5) + 32 = ' + fahrenheitOutput + '°F';
@@ -18,12 +18,14 @@ function convert() {
     return false; 
 }
 
+// * Function untuk mengosongkan textarea ketika tombol reset ditekan*\\
 function reset() {
     document.getElementById('input-celsius').value = '';
     document.getElementById('result').textContent = '';
     document.getElementById('method-output').textContent = '';
 }
 
+// * Function untuk mendirect ke page lain nya*\\
 function reverse() {
     window.location.href = 'F-to-C.html';
 }
@@ -31,7 +33,7 @@ function reverse() {
 
 //* Fahrenheit to Celsius//
 
-
+// * Function untuk mengconvert nilai pada input (Fahrenheit to Celsius) dan validation input*\\
 function convertFahrenheit() {
     let fahrenheitInput = parseFloat(document.getElementById('input-fahrenheit').value); 
 
